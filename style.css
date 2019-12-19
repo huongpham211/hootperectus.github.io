@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    /* background: #edf1f2; */
+}
+
+
+body, html {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+
+.container {
+    width: 100%;
+    /*test color*/
+    /* background: #0e141c; */
+    /*pick this color*/
+    /* background: #2F2F2F; */
+}
+
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+    Header
+*/
+
+.header {
+    height: 100%;
+    width: 280px;
+    float: left;
+    position: fixed;
+    border-right: 1px solid #787d85;
+
+    background-image: linear-gradient(to right, #0a3d47, #160738, #0d5463);
+    background-size: 400%;
+    background-position: 0 0;
+    box-shadow: inset 0 0 5em rgba(0,0,0,.5);
+    /* Animation */
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: gradients;
+}
+
+@keyframes gradients {
+    0%  {background-position: 0 0;}
+    25% {background-position: 50% 0;}
+    50% {background-position: 90% 0;}
+    60% {background-position: 60%;}
+    75% {background-position: 40%;}
+    100% {background-position: 0 0;}
+}
+
+
+nav {
+    background-color: inherit
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+
+.logo-hootperectus {
+    height: 150px;
+    width: inherit;
+    text-align: center;
+}
+
+
+.logo-hootperectus a {
+    display: block;
+    width: auto;
+    height: auto;
+    padding-top: 2em;
+}
+
+
+#logo-svg {
+    stroke-width: 1;
+    fill: #fff;
+    display: inline-block;
+    -webkit-transition: opacity .4s ease;
+    -moz-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+
+
+.logo-hootperectus :hover #logo-svg {
+    fill: url(#gradient);
+    opacity: 1.0;
+}
+
+
+.search-global {
+    padding-bottom: 10px;
+}
+
+
+.input-filter {
+    width: 240px;
+    height: 40px;
+    margin: auto;
+}
+
+
+#input-search {
+    height: 100%;
+    width: 100%;
+    background: #edf1f2;
+    margin: auto;
+    padding-left: 30px;
+    display: block;
+    border-radius: 30px;
+    border: 1px solid #D0CFCE;
+}
+
+
+#input-search:focus {
+    outline: none;
+    border: 2px solid #85b0e7;
+    transition: 0.35s ease;
+    border-radius: 30px;
+}
+
+
+.navigation-primarymenu {
+    width: 280px;
+    padding-top: 15px; 
+}
+  
+#main-menu li {
+    list-style-type: none;
+    width: auto;
+    height: auto;
+}
+
+
+#main-menu li a {
+    text-decoration: none;
+    color: #c3c6ce;
+    display: block;
+    padding: 0 20px;
+}
+
+
+#main-menu a {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+#main-menu li a:hover {
+    background: #4b5b74;
+    color: #fff;
+}
+
+
+#submenu li a {
+    display: block;
+    padding: 0 20px 0 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+
+.arrow-icon {
+    stroke: #D0CFCE;
+    fill: #D0CFCE;
+}
+
+#right-arrow{
+    float: right;
+}
+
+#cart-item-count {
+    float: right;
+}
+
+
+.navigation-bottom {
+    height: 100px;
+    width: 280px;
+    position: fixed;
+    bottom: 0%;
+    border-top: 0.5px solid #787d85;
+}
+
+
+.other-nav {
+    display: table;
+    width: inherit;
+}
+
+
+.other-nav a {
+    color:#9197a1;
+    text-decoration: none;
+}
+
+
+.info-footer {
+    display: inline-block;
+    text-align: center;
+    width: 33.33%;
+}
+
+
+.info-footer a {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.info-footer a:hover {
+    background: linear-gradient(
+        to right,
+        #1EBEE0 0%,
+        #1EBEE0 28%,
+        #952491 91%,
+        #952491 100%
+        );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* hover both of svg icon and text inside a tag */
+.infor-contact a:hover {
+    background: linear-gradient(
+        to right,
+        #1EBEE0 0%,
+        #1EBEE0 28%,
+        #952491 91%,
+        #952491 100%
+        );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#contact-icon {
+    display: inline-block;
+    -webkit-transition: opacity .4s ease;
+    -moz-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+
+
+.infor-contact :hover #contact-icon {
+    fill: url(#gradient);
+    opacity: 1.0;
+}
+
+
+.infor-contact {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+}
+
+
+.infor-contact a {
+    font-size: 14px;
+    height: 60%;
+}
+
+
+#contact-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Global-content */
+.global-content {
+    background: #0e141c;
+    float: right;
+    width: calc(100% - 280px);
+    height: auto;
+    /* position: relative; */
+}
+
+/* homepage */
+.hero-banner {
+    
+}
+
+
+/*about-us */
+.information {
+    width: 100%;
+    position: relative;
+}
+
+
+.information-hero-banner {
+    /* text-align: center;
+    vertical-align: middle; */
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: cover;
+    /* overflow: hidden; */
+    background-image: url("https://wallpaperaccess.com/full/84303.jpg");
+    background-position: right;
+}
+
+#infor-hero-content {
+    position: relative;
+    font-size: 80px;
+    color: #fff;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
