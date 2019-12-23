@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hootperectus</title>
+    <title>My Games Library</title>
     <link rel="stylesheet" type= "text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -117,13 +119,13 @@
                                 </ul>
                             </li>
                             <li><a href ="#">Cart<span id="cart-item-count">(0)</span></a></li>
-                            <li><a href ="my-game-library.html">My game library</a></li>
+                            <li><a href ="#">My game library</a></li>
                             </ul>
                     </div>
                     <div class="navigation-bottom">
                         <div class="other-nav">
                             <div class="info-footer"><a href="about-us.html">About us</a></div>
-                            <div class="info-footer"><a href="term-of-sale.html">Terms of sale</a></div>
+                            <div class="info-footer"><a href="term-of-sale.html">Term of sale</a></div>
                             <div class="info-footer"><a href="help.html">Help</a></div>
                             <div class="infor-contact"><a href= "#">
                                 <svg id="contact-icon" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -179,10 +181,94 @@
         </div>
     
         <div class="global-content">
-            <div class="hero-banner">
-                <img src="" alt="">
+            <div class="games-library">
+                <div class="user-account">
+                    <span class="float-right">madfox@inspace.com</span>
+                </div>
+                <div class="purchases">
+                    <div class="purchases-menu">
+                        <div class="size30">Purchases</div>
+                        <div class="item-right" id="games">GAMES</div>
+                        <div class="item-right" id="gift-cards">GIFT CARDS</div>
+                        <div class="item-right" id="digital-products">DIGITAL PRODUCTS</div>
+                    </div>
+                    <div class="purchase-information">
+                        <h3>YOUR PURCHASE</h3>
+                        <div class="product-key">
+                            <button onclick="copyClipboard()">
+                                <i class="far fa-copy" style="color:black"></i>
+                                <span>COPY</span>
+                            </button>
+                            <div id="key-to-copy">трахни тебя сукин сын черт побери мудак идиот</div>
+                        </div>
+                        <script>
+                            function copyClipboard() {
+                                var elm = document.getElementById("key-to-copy");
+                                // for Internet Explorer
+                            
+                                if(document.body.createTextRange) {
+                                var range = document.body.createTextRange();
+                                range.moveToElementText(elm);
+                                range.select();
+                                document.execCommand("Copy");
+                                alert("Copied div content to clipboard");
+                                }
+                                else if(window.getSelection) {
+                                // other browsers
+                            
+                                var selection = window.getSelection();
+                                var range = document.createRange();
+                                range.selectNodeContents(elm);
+                                selection.removeAllRanges();
+                                selection.addRange(range);
+                                document.execCommand("Copy");
+                                alert("Copied div content to clipboard");
+                                }
+                            }
+                        </script>
+                        <div class="product-info">
+                            <table>
+                                <tr>
+                                    <td>Order No.</td>
+                                    <td>
+                                        <span class="" id="order-no">0127345</span>
+                                        <span> for </span>
+                                        <span class="" id="product-price">300.000</span>
+                                        <span class="unit"> VND</span>
+                                        <span> issued </span>
+                                        <span id="trade-date">November 2, 2019 00:00</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Payment status:</td>
+                                    <td>
+                                        <i class="fas fa-check-circle" style="color:#32BA7C"></i>
+                                        <span>(paid by </span>
+                                        <span id="payment-method">bank card </span>
+                                        <span id="account-number">1234-xxxx-xxxx-1283)</span>                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Product name:</td>
+                                    <td>
+                                        <span id="product-name">Hiệu ứng trốn chạy (cassettle)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Item description:</td>
+                                    <td>
+                                        Gói giấy màu xanh
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Instructions for receiving products:</td>
+                                    <td>Chuyển phát nhanh</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="store-content"></div>
         </div>
 
         <div class="clearfix"></div>

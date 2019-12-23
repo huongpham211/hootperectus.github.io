@@ -44,28 +44,49 @@ body, html {
     position: fixed;
     border-right: 1px solid #787d85;
 
-    background-image: linear-gradient(to right bottom, #0a3d47, #160738, #0d5463);
-    background-size: 400%;
+}
+
+.header-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    background-image: url("https://i.pinimg.com/564x/6a/e5/78/6ae57807cb24f5cadda1d11aa9c29f3a.jpg");
+    background-size: auto 120%;
     background-position: 0 0;
-    box-shadow: inset 0 0 5em rgba(0,0,0,.5);
+    box-shadow: inset 0 0 5em rgba(0,0,0,0.5);
     /* Animation */
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-name: gradients;
 }
 
+
 @keyframes gradients {
     0%  {background-position: 0 0;}
-    25% {background-position: 50% 0;}
-    50% {background-position: 90% 0;}
-    60% {background-position: 60%;}
-    75% {background-position: 40%;}
+    /* 10% {background-position: 20% 0;} */
+    /* 20% {background-position: 40% 0;}  */
+    /* 30% {background-position: 60% 0;} */
+    /* 40% {background-position: 80% 0;} */
+    50% {background-position: 100% 0;}
+    /* 60% {background-position: 80% 0;}
+    70% {background-position: 60% 0;}
+    80% {background-position: 40% 0;}
+    90% {background-position: 20%;} */
     100% {background-position: 0 0;}
 }
 
 
-nav {
-    background-color: inherit
+.header-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
 }
 
 
@@ -74,6 +95,15 @@ img {
     max-height: 100%;
     margin: auto;
 }
+
+
+/* .navigation-scrollable {
+    overflow-y: auto;
+    height: 450px;
+    width: 95%;
+    overflow-x: hidden;
+    overscroll-behavior-y: contain;
+} */
 
 
 .logo-hootperectus {
@@ -170,7 +200,7 @@ img {
 
 
 #main-menu li a:hover {
-    background: #4b5b74;
+    background:rgba(250, 250, 250, 0.4);
     color: #fff;
 }
 
@@ -301,12 +331,8 @@ img {
     float: right;
     width: calc(100% - 280px);
     height: auto;
+    display: block;
     /* position: relative; */
-}
-
-/* homepage */
-.hero-banner {
-    
 }
 
 
@@ -338,16 +364,20 @@ img {
 
 
 /* login page */
-.wrapper {
-    background: #0a3d62;
-    background: linear-gradient(to right, 
+.login-page {
+    text-align: center;
+}
+
+.login-bg-effect {
+    /* background: linear-gradient(to right, 
         #0a3d47 0%, 
         #1993ac 25%,
         #1EBEE0 50%,
         #952491 75%,
-        #5c1e80 100%);
-        
+        #5c1e80 100%); */
     position: absolute;
+    background: inherit;
+    z-index: 2;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -355,7 +385,7 @@ img {
     background-position: 0 0;
     box-shadow: inset 0 0 5em rgba(0,0,0,.5);
     /* Animation */
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-name: gradients;
 }
@@ -364,7 +394,6 @@ img {
     position: relative;
     width: auto;
     height: auto;
-    z-index: 1;
 }
 
 .bg-cube-bubbles li {
@@ -410,8 +439,8 @@ img {
 
 .bg-cube-bubbles li:nth-child(3) {
     left: 15%;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     -webkit-animation-duration: 15s;
     animation-duration: 15s;
     background: rgba(255, 255, 255, 0.35)
@@ -421,10 +450,10 @@ img {
     left: 20%;
     width: 90px;
     height: 90px;
-    -webkit-animation-delay: 5s;
-    animation-delay: 5s;
-    -webkit-animation-duration: 22s;
-    animation-duration: 22s;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
     background-color: rgba(255, 255, 255, 0.25);
 }
 
@@ -532,8 +561,8 @@ img {
     width: 50px;
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
-    -webkit-animation-duration: 15s;
-    animation-duration: 15s;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
 }
 
 .bg-cube-bubbles li:nth-child(17) {
@@ -556,8 +585,8 @@ img {
 
 .bg-cube-bubbles li:nth-child(19) {
     left: 95%;
-    -webkit-animation-duration: 10s;
-    animation-duration: 10s;
+    -webkit-animation-duration: 12s;
+    animation-duration: 12s;
 }
 
 .bg-cube-bubbles li:nth-child(20) {
@@ -566,6 +595,241 @@ img {
     height: 160px;
     -webkit-animation-delay: 11s;
             animation-delay: 11s;
+}
+
+
+.login-bg-img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/8cb77644355355.58108841dcab0.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: auto auto;
+}
+
+.login-box {
+    position: absolute;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+    width: 450px;
+    height: 250px;
+    border-radius: 2px;
+    overflow: hidden;
+    z-index: 4;
+    background: rgba(0,0,0,0.5)
+}
+
+.size40 {
+    font-size: 40px;
+}
+
+
+.login-content {
+    
+}
+
+
+/* My game library */
+.games-library {
+    padding: 10px 80px 20px 80px;
+    position: relative;
+    color: #c3c6ce;
+    font-size: 16px;
+    height: 100%;
+}
+
+
+.user-account {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.float-right {
+    float: right;
+}
+
+
+.purchases-menu {
+    display: table;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+
+
+.purchases-menu #games {
+    width: 10%;
+}
+
+.purchases-menu #gift-cards {
+    width: 20%;
+}
+
+.purchases-menu #digital-products {
+    width: 25%;
+}
+
+.size30 {
+    display: inline-block;
+    width: 45%;
+    font-size: 30px;
+}
+
+.item-right {
+    display: inline-block;
+    font-size: 14px;
+    text-align: right;
+}
+
+
+.purchases-table {
+    background-color: rgba(250, 250, 250, 0.1);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.purchases-table table {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: left;
+    /* padding: 30px; */
+}
+
+
+.purchases-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.purchases-table td {
+    font-size: 14px;
+    padding: 8px 0 8px 0px;
+    border-top: 1px solid #4c5057;
+}
+
+.scroll-tbl-content tr:last-child {
+    border-bottom: 3px double #4c5057;
+}
+
+.purchases a {
+    text-decoration: none;
+    color: #698dbb;
+    padding: 0px 0px 0px 8px;
+}
+
+.purchases a:hover {
+    text-decoration: underline;
+}
+
+.purchases-pagination {
+    display: inline-block;
+}
+
+.fixed-tbl-header {
+    width: 100%;
+}
+
+
+.scroll-tbl-content{
+    height: 500px;
+    width: 100%;
+    overflow-y: scroll;
+    display: block;
+    padding: 0px 0px 50px 0px;
+}
+
+.product-name {
+    width: 70%;
+}
+
+.price {
+    width: 15%;
+}
+
+.date {
+    width: 10%;
+}
+
+.status {
+    width: 5%;
+    text-align: center !important;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 5px;
+} 
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(250,250,250,0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(250,250,250,0.5);
+    border-radius: 5px;
+}
+
+
+/* purchases-information */
+.purchase-information {
+    background-color: rgba(250, 250, 250, 0.1);
+    border-radius: 5px;
+}
+
+.product-key {
+    margin: 20px 0px 20px 0px;
+    background: #0a3d47 ;
+    min-height: 50px;
+    border: 2px solid #1993ac;
+}
+
+.product-key button {
+    float: right;
+    display: block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: #1993ac;
+    border-style: none;
+    /* border-top-right-radius: 5px; */
+}
+
+.product-key #key-to-copy {
+    padding: 30px 50px 30px 50px;
+}
+
+
+.purchase-information {
+    padding: 20px 50px 50px 50px;
+}
+
+
+.purchase-information table {
+    border-collapse: collapse;
+}
+
+
+.purchase-information table td {
+    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+    border-bottom: 1px solid #4c5057;
+}
+
+.purchase-information table td:first-child {
+    width: 25%;
 }
 
 

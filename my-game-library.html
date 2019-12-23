@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Games Library</title>
+    <link rel="stylesheet" type= "text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-bg"></div>
+            <div class="header-overlay"></div>
+            <nav class="navigation">
+                <div class="navigation-scrollable">
+                    <div class="navigation-top">
+                        <div class="logo-hootperectus">
+                            <a href="index.html">
+                                <svg width=200px height=80px id="logo-svg" viewBox="0 -600 5000 40" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs>
+                                        <linearGradient id="gradient" gradientUnits="userSpaceOnUse" fy="90%">
+                                            <stop offset="0" style="stop-color:#1EBEE0" />
+                                            <stop offset="1" style="stop-color:#952491" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g id="logo-gradient" transform="scale(1,-1)">
+                                                <path d="M1330 1191 c-28 -52 -5 -73 112 -101 263 -64 464 -163 444 -217 -3
+                                                -7 -1 -15 4 -18 6 -4 10 -17 10 -31 0 -38 16 -29 54 30 59 92 144 141 268 154
+                                                67 6 73 9 82 34 35 100 -190 88 -330 -18 -17 -13 -33 -24 -37 -24 -3 0 -29 16
+                                                -59 35 -65 44 -166 83 -344 135 -155 45 -189 49 -204 21z"/>
+                                                <path d="M1417 910 c-114 -29 -199 -114 -237 -238 -76 -245 76 -472 315 -472
+                                                93 0 152 25 220 93 83 84 108 147 109 277 0 84 -3 102 -29 158 -34 76 -104
+                                                143 -173 167 -59 20 -155 27 -205 15z m150 -171 c65 -31 98 -93 98 -184 0
+                                                -119 -54 -186 -155 -193 -104 -6 -180 65 -188 177 -12 164 111 265 245 200z"/>
+                                            
+                                                <path d="M2225 911 c-163 -43 -265 -203 -253 -397 6 -87 49 -186 101 -230 85
+                                                -72 222 -101 329 -70 108 31 200 144 228 281 34 166 -55 349 -195 397 -59 21
+                                                -167 30 -210 19z m138 -165 c18 -7 47 -29 64 -49 109 -125 34 -337 -119 -337
+                                                -114 0 -187 94 -176 226 11 132 119 207 231 160z"/>
+                                            
+                                                <path d="M496 869 l-26 -20 0 -315 c0 -305 1 -315 21 -335 15 -15 28 -19 47
+                                                -14 51 13 62 32 62 109 0 83 22 135 61 148 34 11 128 -23 175 -64 32 -28 34
+                                                -34 34 -92 0 -51 4 -67 20 -81 29 -26 89 -23 112 5 16 20 18 49 18 329 0 261
+                                                -2 310 -16 329 -21 30 -68 29 -99 -3 -22 -21 -25 -33 -25 -100 0 -87 -18 -140
+                                                -54 -156 -32 -15 -151 20 -188 54 -23 22 -26 31 -25 93 0 77 -13 111 -49 124
+                                                -34 13 -38 13 -68 -11z"/>
+                                                <path d="M3488 872 c-58 -35 -63 -60 -66 -364 l-3 -278 25 -25 c14 -14 35 -25
+                                                46 -25 32 0 70 44 70 80 0 82 50 130 137 130 132 2 226 89 240 223 11 107 -46
+                                                219 -131 258 -57 26 -277 27 -318 1z m259 -156 c23 -20 28 -32 28 -71 0 -62
+                                                -35 -95 -101 -95 -61 0 -81 13 -94 60 -12 44 -5 86 18 113 24 28 113 24 149
+                                                -7z"/>
+                                                <path d="M4095 888 c-27 -15 -45 -38 -45 -60 0 -10 37 -74 82 -141 45 -67 88
+                                                -138 95 -157 7 -21 12 -86 13 -163 0 -122 1 -129 25 -152 28 -29 76 -33 96 -8
+                                                10 11 13 40 11 94 -5 172 22 256 132 414 61 87 68 117 35 159 -39 49 -71 34
+                                                -138 -67 -18 -27 -48 -55 -66 -64 -31 -15 -35 -15 -65 7 -18 13 -47 47 -66 76
+                                                -45 70 -69 84 -109 62z"/>
+                                                <path d="M2784 876 c-50 -22 -58 -63 -19 -101 19 -20 35 -25 72 -25 53 -1 70
+                                                -10 99 -55 17 -26 19 -52 22 -252 l4 -223 25 -20 c33 -26 79 -26 93 -1 6 12
+                                                10 98 10 210 0 285 19 341 118 341 59 0 87 20 97 67 5 24 2 36 -14 52 -20 20
+                                                -32 21 -248 21 -169 -1 -236 -4 -259 -14z"/>
+                                                <path d="M1862 217 c-18 -18 -32 -36 -32 -40 0 -12 62 -77 74 -77 14 0 76 62
+                                                76 76 0 13 -63 74 -76 74 -6 0 -24 -15 -42 -33z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="search-global">
+                            <form action="" id="search-global">
+                                <div class="input-filter">
+                                    <span id="icon-global-search">
+  
+                                    </span>
+                                    <input type="text" id="input-search" name = "input-search" placeholder="Search...">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="navigation-primarymenu">
+                        <ul id= "main-menu">
+                            <li id="store">
+                                <a href ="#">Store</a>
+                                <ul id="submenu">
+                                <li>
+                                    <a href="#">
+                                        <span>Games</span>
+                                        <span id="right-arrow">
+                                            <svg class="arrow-icon" width="10px" height="10px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 306 306">
+                                                <g id="chevron-right">
+                                                    <path d="M94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153z"/>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                    <span>Giftcards</span>
+                                    <span id="right-arrow">
+                                        <svg class="arrow-icon" width="10px" height="10px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 306 306">
+                                            <g id="chevron-right">
+                                                <path d="M94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153z"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    </a></li>
+                                <li><a href="#">
+                                    <span>Digital Products</span>
+                                    <span id="right-arrow">
+                                        <svg class="arrow-icon" width="10px" height="10px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 306 306">
+                                            <g id="chevron-right">
+                                                <path d="M94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153z"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </a></li>
+                                </ul>
+                            </li>
+                            <li><a href ="#">Cart<span id="cart-item-count">(0)</span></a></li>
+                            <li><a href ="#">My game library</a></li>
+                            </ul>
+                    </div>
+                    <div class="navigation-bottom">
+                        <div class="other-nav">
+                            <div class="info-footer"><a href="about-us.html">About us</a></div>
+                            <div class="info-footer"><a href="term-of-sale.html">Term of sale</a></div>
+                            <div class="info-footer"><a href="help.html">Help</a></div>
+                            <div class="infor-contact"><a href= "#">
+                                <svg id="contact-icon" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 155.139 155.139" style="enable-background:new 0 0 156 156;" xml:space="preserve" stroke-width="5" stroke="#9197a1" fill="#0e141c">
+                                    <g>
+                                        <path id="f_1_" d="M89.584,155.139V84.378h23.742l3.562-27.585H89.584V39.184
+                                            c0-7.984,2.208-13.425,13.67-13.425l14.595-0.006V1.08C115.325,0.752,106.661,0,96.577,0C75.52,0,61.104,12.853,61.104,36.452
+                                            v20.341H37.29v27.585h23.814v70.761H89.584z"/>
+                                    </g>
+                               </svg>
+                                <span>Hootpy Store</span>
+                            </a></div>
+                            <div class="infor-contact"><a href= "#">
+                                    <svg id="contact-icon" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 512.006 512.006" style="enable-background:new 0 0 512.006 512.006;" xml:space="preserve" stroke-width="3" stroke="#9197a1" fill="#9197a1">
+                                        <g>
+                                            <g>
+                                                <path d="M370.037,296.152c-12.527-1.647-24.883-4.719-36.693-9.122c-13.107-4.898-28.006-1.741-37.999,8.115l-12.774,12.74
+                                                    c-28.681-17.451-52.804-41.523-70.306-70.144l12.792-12.766c9.847-9.95,13.03-24.832,8.107-37.905
+                                                    c-4.42-11.819-7.501-24.141-9.156-36.719c-2.517-17.783-17.877-31.317-35.908-30.899h-41.19c-1.075,0-2.15,0.051-3.208,0.154
+                                                    c-9.574,0.853-18.236,5.393-24.397,12.757c-6.161,7.381-9.079,16.708-8.201,26.402c4.625,43.477,19.661,85.854,43.435,122.487
+                                                    c21.606,33.937,50.995,63.275,84.941,84.804c36.582,23.671,78.839,38.682,122.377,43.401c1.109,0.102,2.219,0.145,3.362,0.145
+                                                    c9.617-0.034,18.637-3.806,25.412-10.641c6.775-6.81,10.479-15.855,10.445-25.421V332.53
+                                                    C401.473,314.328,388.178,298.704,370.037,296.152z M384.023,332.453v41.139c0.017,5.035-1.929,9.779-5.487,13.363
+                                                    c-3.558,3.584-8.303,5.564-13.329,5.581c-0.614,0-1.229-0.026-1.673-0.06c-40.721-4.412-80.401-18.509-114.833-40.789
+                                                    c-31.906-20.233-59.486-47.761-79.795-79.65c-22.366-34.458-36.48-74.24-40.815-114.927c-0.461-5.018,1.075-9.916,4.309-13.781
+                                                    c3.243-3.874,7.799-6.255,12.851-6.707c0.555-0.051,1.109-0.085,1.664-0.085h41.276c0.051,0,0.12,0,0.179,0
+                                                    c9.387,0,17.425,6.946,18.748,16.162c1.818,13.773,5.205,27.358,10.086,40.397c2.577,6.869,0.913,14.677-4.224,19.857
+                                                    l-17.434,17.408c-2.731,2.714-3.294,6.921-1.391,10.266c20.301,35.627,49.894,65.161,85.581,85.41
+                                                    c3.337,1.886,7.526,1.331,10.24-1.382l17.408-17.365c5.239-5.163,13.065-6.852,19.994-4.241
+                                                    c13.03,4.855,26.641,8.235,40.371,10.044c9.515,1.34,16.512,9.574,16.273,19.157C384.023,332.308,384.023,332.385,384.023,332.453
+                                                    z"/>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path d="M256.006,0.003c-141.158,0-256,114.842-256,256c0,48.819,13.773,96.145,39.876,137.182L0.526,500.534
+                                                    c-1.135,3.072-0.401,6.528,1.886,8.875c1.638,1.69,3.857,2.594,6.127,2.594c0.905,0,1.818-0.145,2.697-0.435l111.352-37.111
+                                                    c40.158,24.567,86.195,37.547,133.419,37.547c141.158,0,256-114.842,256-256S397.164,0.003,256.006,0.003z M256.014,494.936
+                                                    c-45.346,0-89.523-12.817-127.744-37.06c-1.382-0.87-2.97-1.323-4.574-1.323c-0.913,0-1.818,0.145-2.697,0.444l-98.347,32.777
+                                                    l34.731-94.72c0.93-2.543,0.606-5.376-0.887-7.637c-25.788-39.057-39.415-84.497-39.415-131.413
+                                                    c0-131.746,107.187-238.933,238.933-238.933s238.933,107.187,238.933,238.933S387.76,494.936,256.014,494.936z"/>
+                                            </g>
+                                        </g>
+                               
+                               </svg>
+                                <span>097185596</span>
+                            </a></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    
+        <div class="global-content">
+            <div class="games-library">
+                <div class="user-account">
+                    <span class="float-right">madfox@inspace.com</span>
+                </div>
+                <div class="purchases">
+                    <div class="purchases-menu">
+                        <div class="purchases-item size30">Purchases</div>
+                        <div class="purchases-item item-right" id="games">GAMES</div>
+                        <div class="purchases-item item-right" id="gift-cards">GIFT CARDS</div>
+                        <div class="purchases-item item-right" id="digital-products">DIGITAL PRODUCTS</div>
+                    </div>
+                    <div class="purchases-table">
+                        <div class="fixed-tbl-header">
+                            <table>
+                                <thread>
+                                    <tr>
+                                        <th class="product-name">Product name</th>
+                                        <th class="price">Price</th>
+                                        <th class="date">Date</th>
+                                        <th class="status"></th>
+                                    </tr>
+                                </thread>
+                            </table>
+                        </div>
+                        <div class="scroll-tbl-content">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="product-name"><a href="#">2kg thịt chân giò</a></td>
+                                        <td class="price">240.000<small class="unit"> VND</small></td>
+                                        <td class="date">21.12.2019</td>
+                                        <td class="status"><img src="checked.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2 trứng gà so loại 10q/v</a></td>
+                                        <td>68.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td class="status"><img src="refund.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">1 chó bông siêu to khổng lồ</a></td>
+                                        <td>497.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td class="status"><img src="cancel.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">5 nấm kim châm 250g</a></td>
+                                        <td>75.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td class="status"><i class="fas fa-check-circle" style="color:#32BA7C"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">1 coca 2.25L</a></td>
+                                        <td>20.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td class="status"><img src="stopwatch.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2kg thịt bò ba chỉ Mỹ</a></td>
+                                        <td>360.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.6kg cánh gà</a></td>
+                                        <td>42.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">3 nấm rơm 250g</a></td>
+                                        <td>60.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.5kg xương bò</a></td>
+                                        <td>30.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.7kg rau cần tây</a></td>
+                                        <td>42.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.5kg sườn sụn heo</a></td>
+                                        <td>70.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.7kg rau muống</a></td>
+                                        <td>28.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">1 ngô ngọt loại 2b/khay</a></td>
+                                        <td>24.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Gia vị lẩu bò</a></td>
+                                        <td>15.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">5 nấm kim châm 250g</a></td>
+                                        <td>75.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">1 coca 2.25L</a></td>
+                                        <td>20.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2kg thịt bò ba chỉ Mỹ</a></td>
+                                        <td>360.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.6kg cánh gà</a></td>
+                                        <td>42.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">3 nấm rơm 250g</a></td>
+                                        <td>60.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.5kg xương bò</a></td>
+                                        <td>30.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.7kg rau cần tây</a></td>
+                                        <td>42.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.5kg sườn sụn heo</a></td>
+                                        <td>70.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.7kg rau muống</a></td>
+                                        <td>28.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">1 ngô ngọt loại 2b/khay</a></td>
+                                        <td>24.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">5 nấm kim châm 250g</a></td>
+                                        <td>75.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">1 coca 2.25L</a></td>
+                                        <td>20.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2kg thịt bò ba chỉ Mỹ</a></td>
+                                        <td>360.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.6kg cánh gà</a></td>
+                                        <td>42.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">3 nấm rơm 250g</a></td>
+                                        <td>60.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.5kg xương bò</a></td>
+                                        <td>30.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.7kg rau cần tây</a></td>
+                                        <td>42.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.5kg sườn sụn heo</a></td>
+                                        <td>70.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">0.7kg rau muống</a></td>
+                                        <td>28.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">1 ngô ngọt loại 2b/khay</a></td>
+                                        <td>24.000<small class="unit"> VND</small></td>
+                                        <td>12.12.2019</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+</body>
+</html>
